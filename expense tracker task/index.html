@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <script
+      src="https://kit.fontawesome.com/f9df02bf03.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="index.css" />
+  </head>
+
+  <body>
+    <div class="main-bg">
+      <h1 class="main-heading">Track, Manage, and Optimize Your Expenses</h1>
+      <label class="add-label">Add an expense</label>
+      <div class="inputs-container">
+        <input
+          type="text"
+          placeholder="Enter expenditure purpose"
+          class="name-input"
+          id="purposeInput"
+        />
+        <input
+          type="number"
+          class="amount-input"
+          placeholder="Enter amount"
+          id="expenditureAmount"
+        />
+      </div>
+      <button
+        class="add-expenses-button"
+        type="button"
+        id="addExpense"
+        onclick="addNewExpense()"
+      >
+        Add Expense
+      </button>
+      <button
+        class="add-expenses-button"
+        type="button"
+        onclick="saveItemsToLocalStorage()"
+      >
+        Save
+      </button>
+      <h2 class="expenses-list-heading">Your Expenses</h2>
+      <div class="headings-container">
+        <p class="heading">Purpose</p>
+        <p class="heading">Amount</p>
+      </div>
+      <ul class="expenses-items-container" id="expensesItemsContainer"></ul>
+    </div>
+    <script src="index.js"></script>
+  </body>
+</html>
